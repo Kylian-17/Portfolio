@@ -46,7 +46,7 @@ body {
 
 .sidebar-menu a {
   text-decoration: none;
-  color: #fff;
+  color: #00CED1;
   font-size: 18px;
   padding: 10px 0;
   text-align: center;
@@ -83,11 +83,7 @@ main {
 }
 
 
-@keyframes rebondDoux {
-  0% { transform: translateY(-10px); }
-  50% { transform: translateY(10px); }
-  100% { transform: translateY(0); }
-}
+
 /* --- PAGE D'ACCUEIL --- */
 .home-section {
   height: 100vh;                /* plein écran */
@@ -96,7 +92,6 @@ main {
   justify-content: center;      /* centrer verticalement */
   align-items: center;          /* centrer horizontalement */
   text-align: center;
-  background: linear-gradient(to right, #5591ff, #92baff); /* fond dégradé simple */
   color: white;
   padding: 20px;
 }
@@ -276,4 +271,12 @@ section:not(:last-child) {
   font-weight: bold;
   color: royalblue;
   text-transform: uppercase;
+}
+.sidebar-photo {
+  width: 110px;          /* largeur de la photo */
+  height: 150px;         /* hauteur identique pour garder un carré */
+  border-radius: 5%;    /* rend l’image ronde */
+  object-fit: cover;     /* coupe l’image si elle dépasse */
+  margin-bottom: 15px;   /* espace entre photo et nom */
+  border: 3px solid #1E90FF; /* optionnel : bordure pour faire ressortir */
 }
