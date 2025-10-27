@@ -280,3 +280,23 @@ section:not(:last-child) {
   margin-bottom: 15px;   /* espace entre photo et nom */
   border: 3px solid #1E90FF; /* optionnel : bordure pour faire ressortir */
 }
+.home-title {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #fff; /* curseur */
+  width: 0; /* commence invisible */
+  animation: typing 2s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 23ch; } /* nombre de caractères approximatif du titre */
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #fff; }
+}
