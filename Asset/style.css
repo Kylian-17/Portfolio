@@ -79,7 +79,7 @@ main {
 
 .back-to-top:hover {
   background-color: #1E90FF;
-  color: #fff;
+  color: #00CED1;
 }
 
 
@@ -92,7 +92,7 @@ main {
   justify-content: center;      /* centrer verticalement */
   align-items: center;          /* centrer horizontalement */
   text-align: center;
-  color: white;
+  color: #00CED1;
   padding: 20px;
 }
 
@@ -107,19 +107,6 @@ main {
   max-width: 600px;
   line-height: 1.5;
 }
-
-/* Responsive pour mobile */
-@media (max-width: 768px) {
-  .home-section h1 {
-    font-size: 2rem;
-  }
-
-  .home-section p {
-    font-size: 1rem;
-  }
-}
-
-
 header h1 {
   display: block;                  
   text-align: center;              
@@ -152,9 +139,6 @@ header h1 {
   transition: color 0.3s;          
 }
 
-.menu-titre a:hover {
-  color: coral;                   
-}
 
 
 html {
@@ -163,7 +147,7 @@ html {
 
 
 body {
-  background: linear-gradient(-45deg, #d1fff7d5, #ACB6E5, #5591ff, #92baff);
+  background: linear-gradient(-45deg, #000000, #5591ff, #00CED1, #000000);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
@@ -176,7 +160,7 @@ body {
 
 
 p {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 a {
   color: dodgerblue; 
@@ -226,10 +210,10 @@ section:not(:last-child) {
   align-items: center;         
   justify-content: center;     
   background: dodgerblue;      
-  color: white;                
+  color: #00CED1;                
   text-decoration: none;       
   border-radius: 50%;         
-  box-shadow: 0 4px 12px rgb(204, 255, 0); 
+  box-shadow: 0 4px 12px #00CED1(106, 195, 255); 
   font-size: 22px;             
   transition: transform 0.15s ease,           
 }
